@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d23dff01-fa19-4709-8201-e96a3b6eb505" name="Default Changelist" comment="" />
+    <list default="true" id="d23dff01-fa19-4709-8201-e96a3b6eb505" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/getHttpsConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jest/cssTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jest/fileTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/modules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/pnpTs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -12,50 +29,81 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/login/login.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" selection-start-column="8" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/login/login.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.6400742">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pages/login/login.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="8" selection-start-column="8" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/App.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pages/login/login.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/config/webpack.config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="407">
+                  <caret line="85" column="53" selection-start-line="85" selection-start-column="53" selection-end-line="85" selection-end-column="53" />
+                  <folding>
+                    <element signature="e#15650#15929#0" />
+                    <element signature="e#16077#17271#0" />
+                    <element signature="e#17430#18438#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/config/webpack.config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="311">
+                  <caret line="341" column="34" selection-start-line="341" selection-start-column="28" selection-end-line="341" selection-end-column="34" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,13 +117,17 @@
     <findStrings>
       <find>React App</find>
       <find>React app</find>
+      <find>cssRegex</find>
+      <find>loader</find>
+      <find>css</find>
+      <find>cssOptions</find>
     </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -90,14 +142,15 @@
         <option value="$PROJECT_DIR$/src/pages/login/login.css" />
         <option value="$PROJECT_DIR$/src/pages/login/login.jsx" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/config/webpack.config.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="358" />
-    <option name="y" value="95" />
-    <option name="width" value="923" />
-    <option name="height" value="653" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="557" />
+    <option name="y" value="63" />
+    <option name="width" value="779" />
+    <option name="height" value="641" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -111,6 +164,11 @@
             <path>
               <item name="antd-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="antd-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antd-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="antd-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -153,7 +211,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586231370141</updated>
-      <workItem from="1586231371360" duration="10199000" />
+      <workItem from="1586231371360" duration="10820000" />
     </task>
     <task id="LOCAL-00001" summary="1. yarn 下载脚手架&#10;2. 引入antd ui库">
       <created>1586232128576</created>
@@ -180,7 +238,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10199000" />
+    <option name="totallyTimeSpent" value="10820000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -192,7 +250,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
@@ -200,7 +259,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" weight="0.32755297" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.47704917" />
+      <window_info anchor="bottom" id="Terminal" weight="0.45279384" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -324,7 +383,7 @@
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -344,6 +403,18 @@
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="85" column="53" selection-start-line="85" selection-start-column="53" selection-end-line="85" selection-end-column="53" />
+          <folding>
+            <element signature="e#15650#15929#0" />
+            <element signature="e#16077#17271#0" />
+            <element signature="e#17430#18438#0" />
           </folding>
         </state>
       </provider>
