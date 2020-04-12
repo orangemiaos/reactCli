@@ -1,14 +1,17 @@
 import React,{Component} from 'react';
 import {globalContext} from "./global";
 
+const {Consumer} = globalContext;
+
 
 class ThemedButton extends Component{
     render(){
         return(
-          <div>{this.context.value}</div>
+            <Consumer>
+                {item=>item.value}
+            </Consumer>
         )
     }
 }
 
-ThemedButton.contextType =globalContext;
 export default ThemedButton;
