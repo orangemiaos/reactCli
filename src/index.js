@@ -13,7 +13,7 @@ const Main = () => {
     return (
         <Provider store={store}>
             <BrowserRouter>
-                <Route path='/' component={App}/>
+                <Route path={'/'} component={App}/>
             </BrowserRouter>
         </Provider>
     )

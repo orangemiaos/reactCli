@@ -1,5 +1,4 @@
-const initData = {count: 1};
-const counterReducer = (state = initData, action) => {
+const counterReducer = (state = {}, action) => {
     switch (action.type) {
         case "ADD":
             return {
