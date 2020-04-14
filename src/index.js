@@ -1,18 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import {Provider} from 'react-redux';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import store from './store';
 
 // router
 import {BrowserRouter, Route} from 'react-router-dom';
 
 const Main = () => {
     return (
-        <BrowserRouter>
-            <Route path='/' component={App}/>
-        </BrowserRouter>
+        <Provider store={store}>
+            <BrowserRouter>
+                <Route path='/' component={App}/>
+            </BrowserRouter>
+        </Provider>
     )
 };
 ReactDOM.render(

@@ -1,10 +1,20 @@
 import React,{Component} from 'react';
 import ThemedButton from './ThemedButton.jsx';
+import {globalContext, globalData} from "./global";
+const {Provider} = globalContext;
 
 class Toolbar extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            ...globalData
+        }
+    }
     render(){
         return(
-            <ThemedButton/>
+            <Provider value={this.state}>
+                <ThemedButton/>
+            </Provider>
             )
     }
 }
