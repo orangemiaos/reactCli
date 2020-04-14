@@ -1,7 +1,7 @@
 const getListReducer = (state = {}, action) => {
     switch (action.type) {
         case "GRT_LIST":
-            return state;
+            return state.getList = action.dataList;
         default:
             return state;
     }

@@ -1,9 +1,12 @@
 import {get} from 'axios';
-export const asyncActions = async (dispatch)=>{
-    const result =await get('http://jsonplaceholder.typicode.com/posts');
-    console.log(dispatch,'res');
+
+const asyncActions = (dispatch) => async (dispatch) => {
+    const result = await get('http://jsonplaceholder.typicode.com/posts');
     dispatch({
-        type:'YES',
-        dataList:result.data
-    })
+        type: 'GRT_LIST',
+        dataList: result.data
+    });
 };
+
+
+export default asyncActions;

@@ -6,7 +6,6 @@ import './App.css';
 // import Login from './pages/login/login.jsx';
 // import Toolbar from './pages/Toolbar/Toolbar.jsx';
 import TestRedux from './pages/TestRedux/TestRedux.jsx';
-// import Test from './components/Test.jsx';
 
 const App =()=>(
     <div className="App">

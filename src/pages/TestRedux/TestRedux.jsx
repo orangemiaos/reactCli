@@ -2,12 +2,11 @@ import React, {Component} from 'react';
 // import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {Action} from '../../actions';
-import {asyncActions} from '../../actions/asyncActions';
+import asyncActions from '../../actions/asyncActions';
 
 class TestRedux extends Component {
     render() {
-        const {counter, getList,add, reduce} = this.props;
-        console.log(this.props,'props');
+        const {counter, getList, add, reduce, getNewData} = this.props;
         return (
             <div>
                 <div>
@@ -16,7 +15,7 @@ class TestRedux extends Component {
                     <input type="button" value='点我-1' onClick={reduce}/>
                 </div>
                 <div>
-                    {/*<div><input type="button" value='请求异步数据' onClick={dispatch(asyncActions())}/></div>*/}
+                    <div><input type="button" value='请求异步数据' onClick={getNewData}/></div>
                     <ul>
                         {getList.map(item => <li key={item.id}>{item.title}</li>)}
                     </ul>
@@ -33,6 +32,7 @@ const mapDispatchToProps = (dispatch) => {
     return {
         add: () => dispatch(Action.add),
         reduce: () => dispatch(Action.reduce),
+        getNewData:()=>dispatch(asyncActions())
     }
     // return bindActionCreators({
     //     getList: Action.getList,
@@ -40,4 +40,4 @@ const mapDispatchToProps = (dispatch) => {
     // }, dispatch)
 };
 
-export default connect(mapStateToProps,mapDispatchToProps)(TestRedux);
+export default connect(mapStateToProps, mapDispatchToProps)(TestRedux);
