@@ -3,18 +3,28 @@
 import React, {Suspense} from 'react';
 import {Provider} from "react-redux";
 import store from "./store";
-import {BrowserRouter} from "react-router-dom";
+//将 BrowserRouter 替换为 Router
+import {BrowserRouter as Router} from "react-router-dom";
 import {Loader} from './components/src/index';
 import renderRoutes from './utils/renderRoutes';
+import renderNavigation from './utils/renderNavigation';
 import routes from './utils/routes';
+import './utils/index.less';
 
 const App = () => (
     <Provider store={store}>
-        <BrowserRouter>
+        <Router>
             <Suspense fallback={Loader}>
-                {renderRoutes(routes)}
+                <div className='box'>
+                    <div className="box-left">
+                        {renderNavigation(routes)}
+                    </div>
+                    <div className="box-right">
+                        {renderRoutes(routes)}
+                    </div>
+                </div>
             </Suspense>
-        </BrowserRouter>
+        </Router>
     </Provider>
 );
 export default App;
