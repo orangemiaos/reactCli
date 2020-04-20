@@ -6,9 +6,9 @@ import store from "./store";
 //将 BrowserRouter 替换为 Router
 import {BrowserRouter as Router} from "react-router-dom";
 import {Loader} from './components/src/index';
-import renderRoutes from './utils/renderRoutes';
-import renderNavigation from './utils/renderNavigation';
-import routes from './utils/routes';
+import renderRoutes from './utils/routers/renderRoutes';
+import renderNavigation from './utils/routers/renderNavigation';
+import routes from './utils/routers/routes';
 import './utils/index.less';
 import {connect} from './utils/decorator';
 
