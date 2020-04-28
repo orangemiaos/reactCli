@@ -4,18 +4,19 @@ import {connect} from '../../../utils/decorator';
 import {login} from '../../../utils/https/server';
 
 @connect
-class Login extends React.Component{
+class Login extends React.Component {
     componentDidMount() {
         this.getDecorator();
     }
 
-    getDate = ()=>{
+    getDate = () => {
         login().then(function (response) {
             console.log(response);
         }).catch(function (error) {
-            console.log(error);
+            Promise.reject(error);
         });
     };
+
     render() {
         return (
             <div className='login'>
