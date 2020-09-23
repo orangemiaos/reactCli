@@ -1,40 +1,24 @@
-// lazy ： 路由懒加载
-// Suspense：载入过程中的页面显示
-import React, {Suspense,Component} from 'react';
-import {Provider} from "react-redux";
-import store from "./store";
-//将 BrowserRouter 替换为 Router
-import {BrowserRouter as Router} from "react-router-dom";
-import {Loader} from './components/src/index';
-import renderRoutes from './utils/routers/renderRoutes';
-import renderNavigation from './utils/routers/renderNavigation';
-import routes from './utils/routers/routes';
-import './utils/index.less';
-import {connect} from './utils/decorator';
+import React, {Component} from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import Test from './components/Test.jsx';
+import Main from './components/main.jsx';
 
-@connect
-class App extends Component{
-    componentDidMount() {
-        this.getDecorator();
-    }
+const routes = [
+    {path: '/', component: Main, exact: true},
+    {path: '/test', component: Test}
+]
 
-    render(){
+class App extends Component {
+
+    render() {
         return (
-            <Provider store={store}>
-                <Router>
-                    <Suspense fallback={Loader}>
-                        <div className='box'>
-                            <div className="box-left">
-                                {renderNavigation(routes)}
-                            </div>
-                            <div className="box-right">
-                                {renderRoutes(routes)}
-                            </div>
-                        </div>
-                    </Suspense>
-                </Router>
-            </Provider>
-        );
+            <Router>
+                {routes.map(route => (
+                    <Route key={route.path} path={route.path} component={route.component} exact={route.exact}/>
+                ))}
+            </Router>
+        )
     }
 }
+
 export default App;
