@@ -20,39 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d23dff01-fa19-4709-8201-e96a3b6eb505" name="Default Changelist" comment="react-route exact">
-      <change afterPath="$PROJECT_DIR$/src/components/main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Game.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/asyncActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/src/Test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/src/loader/Loader.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/src/login/Login.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/src/login/login.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/initialState/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TestRedux/TestRedux.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Toolbar/ThemedButton.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Toolbar/Toolbar.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Toolbar/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/counterReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/getListReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/rootReducers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/decorator/connect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/decorator/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/https/request.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/https/server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/https/statusCode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/index.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/routers/renderNavigation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/routers/renderRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/routers/routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587391792816</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="react-route exact">
+      <created>1600876115143</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1600876115143</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -313,13 +292,17 @@
     <MESSAGE value="react-redux Demo" />
     <MESSAGE value="react-route" />
     <MESSAGE value="react-route Switch" />
-    <MESSAGE value="react-route exact" />
     <MESSAGE value="build navigation" />
     <MESSAGE value="react 装饰器" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="react-route exact" />
+    <option name="LAST_COMMIT_MESSAGE" value="react-route exact" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="393" y="141" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600877182334">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="393" y="141" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1600877182334" />
     <state x="497" y="42" key="RollbackChangesDialog" timestamp="1600873760182">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

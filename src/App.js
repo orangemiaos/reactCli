@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Test from './components/Test.jsx';
+import Game from './components/Game.jsx';
 import Main from './components/main.jsx';
 
 const routes = [
     {path: '/', component: Main, exact: true},
-    {path: '/test', component: Test}
+    {path: '/test', component: Test},
+    {path: '/game', component: Game}
 ]
 
 class App extends Component {

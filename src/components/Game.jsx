@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 
 
-class Test extends Component {
+class Game extends Component {
     render() {
         return (
-            <div>Test</div>
+            <div>Game</div>
         )
     }
 }
 
-export default Test;
+export default Game;
