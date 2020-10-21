@@ -1,13 +1,13 @@
-import React, {Component} from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Test from './components/Test.jsx';
 import Game from './components/Game.jsx';
 import Main from './components/main.jsx';
 
 const routes = [
-    {path: '/', component: Main, exact: true},
-    {path: '/test', component: Test},
-    {path: '/game', component: Game}
+    { path: '/', component: Main, exact: true },
+    { path: '/test', component: Test },
+    { path: '/game', component: Game }
 ]
 
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
         return (
             <Router>
                 {routes.map(route => (
-                    <Route key={route.path} path={route.path} component={route.component} exact={route.exact}/>
+                    <Route key={route.path} path={route.path} component={route.component} exact={route.exact} />
                 ))}
             </Router>
         )
